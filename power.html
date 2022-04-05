@@ -1,0 +1,408 @@
+<html lang="es">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/power.css">
+    <link rel="shortcut icon" href="img/nova.png">
+    <title>Dashboard POWER BI</title>
+    <body>
+        <!-- Barra de navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Nova</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dataset">Dataset</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dashboard">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#participantes">Participantes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">Conclusión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+<!--<img class="i1" src="steve.jpg">-->
+
+<div id="inicio">
+  <div class="container">
+
+    <div class="mt-3">
+      <h1 class="text-center text-white">
+        Bienvenid@s a los resultados de la investigación sobre la carpeta de investigación de la Ciudad de México.
+      </h1>
+    </div>
+    
+  </div>  
+</div>
+<!-- dataset -->
+<div id="dataset">
+  <div class="container">
+        <div id="ct">
+          <div class="corner "id="left_top"></div>
+          <div class="corner" id="left_bottom"></div>
+          <div class="corner" id="right_top"></div>
+          <div class="corner" id="right_bottom"></div>
+          <span>FGJ</span>
+          <blockquote>
+            <p class="text-white"><i>&ldquo;Esta base de datos contiene la información actualizada de las 
+              víctimas de los delitos en las carpetas de investigación de la 
+              Fiscalía General de Justicia (FGJ) de la Ciudad de México a partir 
+              de enero de 2019.&rdquo; </i></p>
+          </blockquote>
+        </div>
+     
+      <div class="text-white">
+        <h3>Con base a los datos, veremos cómo se comportan las directreces (FGJ) 
+        extrayendo conclusiones para puntos de mejora en el área de seguridad ciudadana.
+        </h3>
+        <h3>Cada rubro de análisis fue parte del trabajo del equipo con base a conocimientos adquiridos
+        en la Academia, así como conocimientos previos.</h3> 
+      </div>    
+  </div>   
+</div>
+<!-- dashboard -->
+<div id="dashboard" class="mt-3">
+    <h1 class="h">Dashboard</h1>
+    <!-- <iframe title="pruebas" width="1000" height="500" src="https://app.powerbi.com/reportEmbed?reportId=7e9038d3-251f-47b1-baf1-c81e5d500da1&autoAuth=true&ctid=4ae54b05-b77e-4224-aef1-8661422e0816&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe> -->
+    
+    
+    <div class="row text-light mx-2">
+      
+      <div class="col-md-6 mt-3">
+
+        <!-- Card 1 -->
+        <div class="card mb-3 bg-danger card-primary collapsed-card ">
+          <div class="card-header d-flex">
+            <h3 class="card-title">Delitos por año</h3>
+            <div class="card-tools justify-content-end">
+              <button type="button" class="btn btn-tool" data-card-widget="modal" data-toggle="modal" data-target="#delitoxanio">
+              <i class="fas fa-plus"></i>
+              </button>
+            </div>
+           </div>
+
+           <!-- modal -->
+           <div class="modal fade" id="delitoxanio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-ajuste">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title texto-nombre" id="exampleModalLabel">Delitos por año</h5>
+                  <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/DelitosXAño.png" alt="delitos" class="graficas">
+                </div>    
+              </div>
+            </div>
+          </div>
+
+
+           <!-- collapse -->
+          <!-- <div id="delitoxanio" class="collapse">
+            <img src="img/DelitosXAño.png" alt="delitos" class="graficas">
+          </div> -->
+        </div> 
+        <!-- Card 2 -->
+        <div class="card mb-3 bg-info card-primary collapsed-card">
+          <div class="card-header d-flex">
+            <h3 class="card-title">Delitos por categoria</h3>
+            <div class="card-tools justify-content-end">
+              <button type="button" class="btn btn-tool" data-card-widget="modal" data-toggle="modal" data-target="#delitoxcategoria">
+              <i class="fas fa-plus"></i>
+              </button>
+            </div>
+           </div>
+
+
+            <!-- modal -->
+
+            <div class="modal fade" id="delitoxcategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-ajuste">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title texto-nombre" id="exampleModalLabel">Delitos por categoria</h5>
+                    <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/DelitosXCategoria.png" alt="delitoxcategoria" class="graficas">
+                  </div>    
+                </div>
+              </div>
+            </div>
+
+          <!-- <div id="delitoxcategoria" class="collapse">
+            <img src="img/DelitosXCategoria.png" alt="delitoxcategoria" class="graficas">
+          </div> -->
+
+        </div> 
+
+        <!-- Card 3 -->
+        <div class="card bg-dark card-primary collapsed-card">
+          <div class="card-header d-flex">
+            <h3 class="card-title">Delitos por día</h3>
+            <div class="card-tools justify-content-end">
+              <button type="button" class="btn btn-tool" data-card-widget="modal" data-toggle="modal" data-target="#delitoxdia">
+              <i class="fas fa-plus"></i>
+              </button>
+            </div>
+           </div>
+
+           <!-- modal -->
+
+           <div class="modal fade" id="delitoxdia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-ajuste">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title texto-nombre" id="exampleModalLabel">Delitos por día</h5>
+                  <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/DelitosXDia.png" alt="delitoxcategoria" class="graficas">
+                </div>    
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="delitoxdia" class="modal">
+            <img src="img/DelitosXDia.png" alt="delitos" class="graficas">
+          </div> -->
+        </div> 
+      </div>
+      
+        <div class="col-6 mt-3">
+  
+          <!-- Card 1 -->
+          <div class="card mb-3 bg-warning card-primary collapsed-card">
+            <div class="card-header d-flex">
+              <h3 class="card-title">Delitos por edad</h3>
+              <div class="card-tools justify-content-end">
+                <button type="button" class="btn btn-tool" data-card-widget="modal" data-toggle="modal" data-target="#delitoxedad">
+                <i class="fas fa-plus"></i>
+                </button>
+              </div>
+             </div>
+
+             <!-- modal -->
+
+           <div class="modal fade" id="delitoxedad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-ajuste">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title texto-nombre" id="exampleModalLabel">Delitos por edad</h5>
+                  <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/DelitosXEdad.png" alt="delitos" class="graficas">
+                </div>    
+              </div>
+            </div>
+          </div>
+             
+            <!-- <div id="delitoxedad" class="modal">
+              <img src="img/DelitosXEdad.png" alt="delitos" class="graficas">
+            </div> -->
+          </div> 
+          <!-- Card 2 -->
+          <div class="card mb-3 bg-success card-primary collapsed-card">
+            <div class="card-header d-flex">
+              <h3 class="card-title">Horarios más delictivos</h3>
+              <div class="card-tools justify-content-end">
+                <button type="button" class="btn btn-tool" data-card-widget="" data-toggle="modal" data-target="#horariosdelictivos">
+                <i class="fas fa-plus"></i>
+                </button>
+              </div>
+             </div>
+
+
+             <!-- modal -->
+
+           <div class="modal fade" id="horariosdelictivos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-ajuste">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title texto-nombre" id="exampleModalLabel">Horarios más delictivos</h5>
+                  <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/HorariosMasDelictivos.png" alt="delitos" class="graficas">
+                </div>    
+              </div>
+            </div>
+          </div>
+
+
+            <!-- <div id="horariosdelictivos" class="modal">
+              <img src="img/HorariosMasDelictivos.png" alt="delitos" class="graficas">
+            </div> -->
+          </div> 
+  
+          <!-- Card 3 -->
+          <div class="card back-card card-primary collapsed-card">
+            <div class="card-header d-flex">
+              <h3 class="card-title">Top delitos por alcaldias</h3>
+              <div class="card-tools justify-content-end">
+                <button type="button" class="btn btn-tool" data-card-widget="modal" data-toggle="modal" data-target="#topalcaldias">
+                <i class="fas fa-plus"></i>
+                </button>
+              </div>
+             </div>
+             <!-- modal -->
+
+           <div class="modal fade" id="topalcaldias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-ajuste">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title texto-nombre" id="exampleModalLabel">Top delitos por alcaldias</h5>
+                  <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/TOPDelitosXAlcaldias.png" alt="delitos" class="graficas">
+                </div>    
+              </div>
+            </div>
+          </div>
+
+             
+            <!-- <div id="topalcaldias" class="collapse">
+              <img src="img/TOPDelitosXAlcaldias.png" alt="delitos" class="graficas">
+            </div> -->
+          </div> 
+
+  </div>
+</div>
+    
+    
+</div>
+<!-- participantes -->
+<div class="mt-5" id="participantes">
+    <h1 class="h">Participantes</h1>
+    <section class="container">
+      <div class="row">
+        <div class="center">
+          <div class="carta text-dark bg-white d-flex">
+            <div>
+            <img class="integrante" src="img/gabriel.JPG">
+            </div>
+            <div class="text-dark mx-3 pt-2">
+              <h4 class="texto-nombre">Gabriel Alejandro Herrera Gandarela</h4>
+              <p class="texto-puesto">Experto en desarrollo de software.</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12">
+          <div class="carta text-white bg-white d-flex">
+            <div>
+            <img class="integrante" src="img/Daniel.jpg">
+            </div>
+            <div class="text-dark mx-3 pt-2">
+              <h4 class="texto-nombre">Daniel Alejandro Paredes Martinez</h4>
+              <p class="texto-puesto">Experto en análisis de datos.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="col-lg-6 col-md-12">
+          <div class="carta text-white bg-white d-flex">
+            <div>
+            <img class="integrante" src="img/bernardo.jpg">
+            </div>
+            <div class="text-dark mx-3 pt-2">
+              <h4 class="texto-nombre">Bernardo Sedas Rodriguez</h4>
+              <p class="texto-puesto">Experto en análisis de datos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12">
+          <div class="carta text-white bg-white d-flex">
+            <div>
+            <img class="integrante" src="img/steve.jpeg">
+            </div>
+            <div class="text-dark mx-3 pt-2">
+              <h4 class="texto-nombre">Brandon Flores Copca</h4>
+              <p class="texto-puesto">Experto en el desarrollo de software.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="col-lg-6 col-md-12">
+          <div class="carta text-white bg-white d-flex">
+            <div>
+            <img class="integrante" src="img/Juan.jpg">
+            </div>
+            <div class="text-dark mx-3 pt-2">
+              <h4 class="texto-nombre">Juan Carreón Chavez</h4>
+              <p class="texto-puesto">Experto en análisis de datos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
+
+
+<div class="text-center pt-5">
+  <a href="javascript:ventanaSecundaria('https://datastudio.google.com/s/hZiDdHyWO3Y')" class="text-white mt-3"><img src="img/mapas_data.JPG" alt="mapa" height="700" width="900" ></a>
+</div>
+</section>
+<!-- conclusion -->
+<div id="conclusion" class="mt-5">
+    <div class="container">
+    <h1 class="h">Conclusión</h1>
+    <p>La investigación de la información recabada en todos los rubros siempre será importante, ya que con ella se pueden dar resultados interesantes.
+      Con ella tambien puedes determinar ciertos eventos para poder lograr los objetivos de una empresa para bien o lograr evitar algún evento negativo.
+      Para poder organizar la informción y presentarla se necesitan de varias herramientas y fue POWER BI la que nos ayudo a determinar y acomodar toda
+      la información que se nos dió y para lograr los objetivos que se nos pidieron.
+    </p>
+    <p>Con esta información acerca de los delitos cometidos en la CDMX se puede determinar ciertos rubros como:</p>
+    <ol>
+    <li> Delitos por categoria </li>
+    <li> Delitos por edad </li>
+    <li> Sexo de Victimas </li>
+    <li> Alcadias con más delitos </li>
+    </ol>
+  </div>
+</div>
+<!--<iframe title="pruebas" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7e9038d3-251f-47b1-baf1-c81e5d500da1&autoAuth=true&ctid=4ae54b05-b77e-4224-aef1-8661422e0816&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>-->
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<script> 
+  function ventanaSecundaria (URL){ 
+     window.open(URL,"ventana1","width=700,height=900,scrollbars=YES") 
+  } 
+  </script>
+
+</html>
